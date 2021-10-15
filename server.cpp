@@ -41,6 +41,8 @@
 
 using namespace visionaray;
 
+using namespace boost::placeholders;
+
 using viewer_type = viewer_glut;
 
 struct renderer : viewer_type

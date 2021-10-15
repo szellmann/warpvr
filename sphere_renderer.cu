@@ -108,6 +108,7 @@ struct render_kernel
         result_record<float> result;
         result.color = vec4(0.0);
 
+#ifdef __CUDA_ARCH__
         // Perform multi-hit, we allow for up to 16 hits
         // Multi-hit returns a sorted array (based on
         // ray parameter "t") of hit records
@@ -121,6 +122,7 @@ struct render_kernel
             result.color = sphere_colors[hit_rec.prim_id];
             result.isect_pos  = ray.ori + ray.dir * hit_rec.t;
         }
+#endif
 
         return result;
     }
