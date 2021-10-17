@@ -222,7 +222,7 @@ int main(int argc, char** argv)
 
     try
     {
-        rend.init(argc, argv);
+        // rend.init(argc, argv);
     }
     catch (std::exception const& e)
     {

@@ -26,9 +26,7 @@ volume_renderer::volume_renderer(std::string filename)
 {
     vkt::RawFile file(filename.c_str(), "r");
     vkt::Vec3i dims = file.getDims();
-    uint16_t bpv = file.getBytesPerVoxel();
-
-    volume = vkt::StructuredVolume(dims.x, dims.y, dims.z, bpv);
+    volume = vkt::StructuredVolume(dims.x, dims.y, dims.z, file.getDataFormat());
     vkt::InputStream is(file);
     is.read(volume);
 

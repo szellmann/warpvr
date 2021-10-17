@@ -5,10 +5,14 @@ project(remote)
 
 cmake_minimum_required(VERSION 2.8)
 
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 find_package(CUDA REQUIRED)
 
 add_subdirectory(volkit)
 include_directories(volkit/include/cpp)
+include_directories(volkit/include/shared)
 include_directories(volkit/src/3rdparty/visionaray/include)
 include_directories(volkit/src/3rdparty/visionaray/src)
 include_directories(volkit/src/3rdparty/visionaray/src/3rdparty/CmdLine/include)

@@ -120,7 +120,7 @@ struct render_kernel
         if (hit_rec.hit)
         {
             result.color = sphere_colors[hit_rec.prim_id];
-            result.isect_pos  = ray.ori + ray.dir * hit_rec.t;
+            //result.isect_pos  = ray.ori + ray.dir * hit_rec.t;
         }
 #endif
 

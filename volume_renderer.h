@@ -7,6 +7,7 @@
 #include <string>
 
 #include <thrust/device_vector.h>
+#include <thrust/host_vector.h>
 
 #include <visionaray/math/math.h>
 #include <visionaray/texture/texture.h>
