@@ -1,15 +1,11 @@
-Augmenting Image Warping-Based Remote Volume Rendering with Ray Tracing
-=======================================================================
+Remote Volume Rendering with a Decoupled, Ray-Traced Display Phase
+==================================================================
 
-Sample code for the paper S. Zellmann (2020), "Augmenting Image Warping-Based
-Remote Volume Rendering with Ray Tracing" (Preprint under:
-https://arxiv.org/abs/2006.14726)
+Sample code for the paper S. Zellmann (2021), "Remote Volume Rendering with a Decoupled, Ray-Traced Display Phase", STAG: Smart Tools and Applications in Graphics (2021)
 
 <img src="/img/1.jpg" width="270" /><img src="/img/2.jpg" width="270" /><img src="/img/3.jpg" width="270" />
 
-This paper hasn't been peer-reviewed, nor submitted to a journal (yet).
-
-On Ubuntu 18.04 (tested), compile this code as usual (`git clone` with
+On Ubuntu 20.04 (tested), compile this code as usual (`git clone` with
 `--recursive`, `cmake`, `make`, Release mode and C++11 enabled, NVIDIA CUDA in
 a reasonably new version).  You'll likely run into some trouble with swig if
 you have that installed; just unset the `SWIG_` related variables in the cmake
@@ -43,19 +39,16 @@ Options:
 
 # Citation
 
-Currently, the paper is available as a preprint (I might at some point consider
-to add to it and submit to a conference or journal as a short paper, but so far
-there are no concrete plans); in the meantime, if you want to reference this
-work in your own paper, please cite it as:
+If this sample code is useful to you I'd appreciate if you would cite the paper:
 
 ```
-@misc{zellmann2020augmenting,
-      title={Augmenting Image Warping-Based Remote Volume Rendering with Ray Tracing},
-      author={Stefan Zellmann},
-      year={2020},
-      eprint={2006.14726},
-      archivePrefix={arXiv},
-      primaryClass={cs.GR}
+@inproceedings {zellmann:2021,                                                                
+booktitle = {STAG: Smart Tools and Applications in Graphics (2021)},                  
+editor = {P. Frosini and D. Giorgi and S. Melzi and E. Rodola},                                               
+title = {Remote Volume Rendering with a Decoupled, Ray-Traced Display Phase},                                 
+author = {Zellmann, Stefan},                      
+year = {2021},                                                                                
+publisher = {The Eurographics Association},                                                                 
 }
 ```
 
